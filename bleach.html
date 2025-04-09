@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$BLEACH | Privacy Memecoin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: 800;
+            font-size: 24px;
+        }
+
+        .logo span {
+            margin-left: 8px;
+        }
+
+        .btn {
+            background-color: #fff;
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 100px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 72px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            color: #aaa;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #fff, #888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .about {
+            padding: 100px 0;
+            background-color: rgba(255,255,255,0.02);
+        }
+
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .feature {
+            background-color: rgba(255,255,255,0.03);
+            border-radius: 8px;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #aaa;
+            font-size: 16px;
+        }
+
+        .tokenomics, .buy, .social {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .tokenomics h2,
+        .buy h2,
+        .social h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .token-info {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 20px;
+        }
+
+        .token-info p {
+            margin-bottom: 15px;
+        }
+
+        .token-info strong {
+            color: #fff;
+        }
+
+        .buy p {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            color: #aaa;
+            font-size: 18px;
+        }
+
+        .buy-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .social-link {
+            font-size: 32px;
+            width: 70px;
+            height: 70px;
+            background-color: rgba(255,255,255,0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .social-link:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            background-color: rgba(255,255,255,0.03);
+            padding: 30px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 48px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-flask"></i>
+                    <span>$BLEACH</span>
+                </div>
+                <a href="#buy" class="btn">BUY NOW</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>CLEAN YOUR <br><span class="gradient-text">TRANSACTIONS</span></h1>
+            <p>$BLEACH is the memecoin that values your privacy. Because what happens in your wallet, stays in your wallet.</p>
+            <a href="#buy" class="btn">GET $BLEACH</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2>Why $BLEACH?</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-user-secret"></i></div>
+                    <h3>Privacy First</h3>
+                    <p>Because your financial business is nobody else's business. We're sanitizing the blockchain.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Moon Ready</h3>
+                    <p>Already launched and gaining traction. This isn't just another pre-launch promise.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-dna"></i></div>
+                    <h3>Pure Meme Power</h3>
+                    <p>Backed by nothing but community hype and dank memes. As it should be.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tokenomics" id="tokenomics">
+        <div class="container">
+            <h2>Tokenomics</h2>
+            <div class="token-info">
+                <p><strong>Total Supply:</strong> 1,000,000,000 $BLEACH</p>
+                <p><strong>Circulating Supply:</strong> 1,000,000,000 $BLEACH</p>
+                <p><strong>Tax:</strong> 0% (We're not greedy)</p>
+                <p><strong>Contract:</strong> 0xBL3ACH...420F (Always verify!)</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="buy" id="buy">
+        <div class="container">
+            <h2>Ready to ape in?</h2>
+            <p>$BLEACH is available on decentralized exchanges. Swap some ETH and join us on our journey to the moon.</p>
+            <div class="buy-btns">
+                <a href="#" class="btn">Buy on Uniswap</a>
+                <a href="#" class="btn">View Chart</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="social" id="social">
+        <div class="container">
+            <h2>Follow The Movement</h2>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>$BLEACH 2025 | This is not financial advice. DYOR and invest at your own risk.</p>
+        </div>
+    </footer>
+</body>
+</html>
